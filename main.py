@@ -18,4 +18,12 @@ if __name__ == '__main__':
     )
 
     tg.login()
+
+    params = {
+        'title': 'Тестовый чат',
+        'users': ['453039837', '253031461', '217857670'],
+    }
+
+    tg.call_method('messages.createChat', params=params)
+
     tg.idle()
