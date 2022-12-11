@@ -1,0 +1,19 @@
+from environs import Env
+from telegram.client import Telegram
+
+
+if __name__ == '__main__':
+    env = Env()
+    env.read_env()
+    tg_api_id = env.str('TG_API_ID')
+    tg_api_hash = env.str('TG_API_HASH')
+    tg_phone = env.str('TG_PHONE')
+
+    tg = Telegram(
+        api_id=tg_api_id,
+        api_hash=tg_api_hash,
+        phone=tg_phone
+    )
+
+    tg.login()
+    tg.idle()
