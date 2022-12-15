@@ -23,7 +23,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description='Function to create telegram chat'
     )
-    parser.add_argument('path', type='str', help='Path to JSON')
+    parser.add_argument('path', type=str, help='Path to JSON')
     args = parser.parse_args()
 
     env = Env()
