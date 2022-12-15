@@ -50,4 +50,4 @@ if __name__ == '__main__':
 
     for index, group in enumerate(groups, start=1):
         create_tg_chat(tg, f'Тестовая группа {index}', group)
-        time.sleep(1)
+        time.sleep(5)
