@@ -30,7 +30,7 @@ if __name__ == '__main__':
     env.read_env()
     tg_api_id = env.str('TG_API_ID')
     tg_api_hash = env.str('TG_API_HASH')
-    tg_phone = env.str('TG_API_HASH')
+    tg_phone = env.str('TG_PHONE')
     db_encryption_key = env.str('DB_ENCRYPTION_KEY')
 
     tg = Telegram(
